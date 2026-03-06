@@ -1,0 +1,24 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "1.0",
+    "FriendlyName": "Instance Painter",
+    "Description": "Custom brush tool for painting mesh instances with mask support, random scale/rotation, and normal alignment - similar to the UE Foliage system but with enhanced mask and customization features.",
+    "Category": "Editor",
+    "CreatedBy": "Boos501",
+    "CanContainContent": true,
+    "IsBetaVersion": true,
+    "Installed": false,
+    "Modules": [
+        {
+            "Name": "InstancePainterRuntime",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        },
+        {
+            "Name": "InstancePainterEditor",
+            "Type": "Editor",
+            "LoadingPhase": "PostEngineInit"
+        }
+    ]
+}
