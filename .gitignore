@@ -1,0 +1,18 @@
+# UE 生成文件
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+Build/
+BuiltPlugin/
+
+# IDE 文件
+.vs/
+.idea/
+*.sln
+*.suo
+*.vcxproj*
+
+# 系统文件
+Thumbs.db
+.DS_Store

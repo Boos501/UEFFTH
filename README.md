@@ -1,12 +1,69 @@
-# UEFFTH
+# InstancePainter - UE 自定义笔刷实例绘制插件
 
-## Instance Painter Plugin
+## 功能
+- 🖌️ 笔刷绘制 Static Mesh 实例（类似植被系统）
+- 🎭 Alpha Mask 支持（Texture2D 红通道遮罩）
+- 📐 缩放随机（Uniform / Non-Uniform，Min/Max）
+- 🧭 法线对齐（可调强度）
+- 🔄 旋转随机（Yaw/Pitch/Roll 独立 Min/Max）
+- 🏗️ HISM 高性能渲染
+- 🎯 三种模式：绘制 / 擦除 / 单点放置
 
-A custom Unreal Engine editor plugin that provides a brush-based tool for painting Static Mesh instances into a scene — similar to the built-in Foliage system but with enhanced mask support and customization options.
+## 编译方式
+
+### 前提条件
+- Unreal Engine 5.4（`InstancePainterHost.uproject` 的 `EngineAssociation` 默认设为 `5.4`，使用其他版本请修改该字段）
+- Visual Studio 2022 或 JetBrains Rider
+
+### 方式一：使用编译脚本（推荐）
+
+1. 修改 `Build_Win64.bat` 中的 `UE_ROOT` 为你的引擎路径
+2. 双击 `Build_Win64.bat`
+3. 编译完成后双击 `InstancePainterHost.uproject` 打开编辑器
+
+### 方式二：Visual Studio / Rider
+
+1. 修改 `GenerateProjectFiles.bat` 中的 `UE_ROOT`
+2. 双击 `GenerateProjectFiles.bat` 生成 .sln
+3. 用 VS/Rider 打开 `InstancePainterHost.sln`
+4. 设 `InstancePainterHostEditor` 为启动项目
+5. 按 F5 编译并启动
+
+### 方式三：独立编译插件（便携分发）
+
+1. 修改 `BuildPlugin_Standalone.bat` 中的 `UE_ROOT`
+2. 双击运行
+3. 将 `BuiltPlugin/InstancePainter/` 复制到任何 UE 项目的 `Plugins/` 下
+
+### 方式四：手动集成到已有项目
+
+1. 将 `Plugins/InstancePainter/` 文件夹复制到你项目的 `Plugins/` 目录
+2. 右键 `.uproject` → "Generate Visual Studio project files"
+3. 在 VS/Rider 中编译
+4. 或直接打开编辑器（会自动编译）
+
+## 使用方法
+
+1. 打开 UE 编辑器
+2. 确认 Plugins 中 "Instance Painter" 已启用
+3. 在场景中创建一个 Actor，添加 `InstancePainterComponent`
+4. 在 Component 的 `PaintEntries` 中添加 Mesh 配置
+5. 在 Modes 面板中切换到 "Instance Painter"
+6. 选择 Paint/Erase/SinglePlace 工具
+7. 在场景表面绘制
+
+## 快捷键
+
+| 快捷键 | 功能 |
+|--------|------|
+| `[` | 缩小笔刷 |
+| `]` | 放大笔刷 |
+| 左键拖动 | 绘制/擦除 |
+| 左键单击 | 单点放置（SinglePlace 模式） |
 
 ---
 
-## Features
+## Features (English)
 
 - **Brush Painting** — Paint Static Mesh instances directly onto Landscape, Static Mesh surfaces, and BSP geometry using a configurable circular brush.
 - **Erase Tool** — Remove painted instances within the brush radius.

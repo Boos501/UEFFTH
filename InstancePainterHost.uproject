@@ -1,0 +1,22 @@
+{
+    "FileVersion": 3,
+    "EngineAssociation": "5.4",
+    "Category": "",
+    "Description": "Host project for InstancePainter plugin development",
+    "Modules": [
+        {
+            "Name": "InstancePainterHost",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "AdditionalDependencies": [
+                "Engine"
+            ]
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "InstancePainter",
+            "Enabled": true
+        }
+    ]
+}
