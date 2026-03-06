@@ -5,7 +5,7 @@ REM  用法: 修改下方 UE_ROOT 为你的引擎安装路径，然后双击运�
 REM ============================================================
 
 REM ===================== 修改这里 =====================
-SET UE_ROOT=C:\Program Files\Epic Games\UE_5.4
+SET UE_ROOT=C:\Program Files\Epic Games\UE_5.7
 REM ====================================================
 
 SET PROJECT_FILE=%~dp0UEFFTH.uproject

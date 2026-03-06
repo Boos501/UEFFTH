@@ -4,7 +4,7 @@ UE5 自定义笔刷实例绘制工具插件，功能类似植被系统（Foliage
 
 ## 📋 前置要求
 
-- Unreal Engine 5.4（可在 .uproject 中修改 EngineAssociation 适配其他版本）
+- Unreal Engine 5.7（可在 .uproject 中修改 EngineAssociation 适配其他版本）
 - Visual Studio 2022 + "使用 C++ 的游戏开发" 工作负载
 - .NET 6.0 SDK
 
@@ -14,7 +14,7 @@ UE5 自定义笔刷实例绘制工具插件，功能类似植被系统（Foliage
 
 1. 打开 `Build_Win64.bat`，修改第一行 `UE_ROOT` 为你的引擎路径：
    ```
-   SET UE_ROOT=D:\Epic Games\UE_5.4
+   SET UE_ROOT=D:\Epic Games\UE_5.7
    ```
 2. 双击运行 `Build_Win64.bat`
 3. 编译成功后双击 `UEFFTH.uproject` 打开编辑器

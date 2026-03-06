@@ -5,7 +5,7 @@ REM  用法: 修改下方 UE_ROOT 为你的引擎安装路径，然后双击运�
 REM ============================================================
 
 REM ===================== 修改这里 =====================
-SET UE_ROOT=C:\Program Files\Epic Games\UE_5.4
+SET UE_ROOT=C:\Program Files\Epic Games\UE_5.7
 REM ====================================================
 
 SET PROJECT_FILE=%~dp0UEFFTH.uproject
@@ -27,8 +27,8 @@ if not exist "%UE_ROOT%\Engine" (
     echo [ERROR] 请编辑此脚本，修改 UE_ROOT 为你的引擎安装路径
     echo.
     echo 常见路径:
-    echo   Epic Launcher:  C:\Program Files\Epic Games\UE_5.4
-    echo   自定义安装:     D:\UnrealEngine\UE_5.4
+    echo   Epic Launcher:  C:\Program Files\Epic Games\UE_5.7
+    echo   自定义安装:     D:\UnrealEngine\UE_5.7
     echo   源码编译:       D:\UnrealEngine
     echo.
     pause

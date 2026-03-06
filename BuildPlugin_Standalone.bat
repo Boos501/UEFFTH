@@ -5,7 +5,7 @@ REM  编译输出在 BuiltPlugin/ 目录
 REM ============================================================
 
 REM ===================== 修改这里 =====================
-SET UE_ROOT=C:\Program Files\Epic Games\UE_5.4
+SET UE_ROOT=C:\Program Files\Epic Games\UE_5.7
 REM ====================================================
 
 SET PROJECT_FILE=%~dp0UEFFTH.uproject
