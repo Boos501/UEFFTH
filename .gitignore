@@ -1,0 +1,23 @@
+# UE Build Artifacts
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+
+# Plugin Build Artifacts
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+BuiltPlugin/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.vcxproj*
+
+# OS
+Thumbs.db
+.DS_Store
